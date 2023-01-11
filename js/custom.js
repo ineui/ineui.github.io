@@ -12,7 +12,7 @@ function forbidden_control() {
             };
             "string" == typeof a && (b.message = a), "object" == typeof a && (b = $.extend({}, b, a));
             var c, d, e, f = b.showClose ? '<div class="c-message--close">×</div>' : "",
-                g = "" !== b.title ? '<h2 class="c-message__title">' b.title "</h2>" : "",
+                g = "" !== b.title ? '<h2 class="c-message__title">'b.title "</h2>" : "",
                 h = '<div class="c-message animated animated-lento slideInRight"><i class=" c-message--icon c-message--' b.type '"></i><div class="el-notification__group">' g '<div class="el-notification__content">' b.message "</div>" f "</div></div>",
                 i = $("body"),
                 j = $(h);
